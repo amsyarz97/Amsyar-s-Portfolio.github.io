@@ -1,0 +1,90 @@
+/* Additional styles for Design A page */
+
+/* Gradient bar at the top */
+.gradient-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Black to transparent gradient */
+    z-index: 1001; /* Place above other elements */
+}
+
+/* Container for Logo and Home button */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 10px; /* Adjust the top distance as needed */
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo styles */
+.logo-container img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the Home button */
+.btn-home {
+    background: transparent;
+    color: #ff004f;
+    padding: 10px;
+    border: 2px solid #ff004f;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: border-color 0.5s, box-shadow 0.5s, color 0.5s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-home i {
+    font-size: 20px;
+}
+
+.btn-home:hover {
+    background: #ff004f;
+    color: #fff;
+    box-shadow: 0 0 10px 0 #ff004f;
+}
+
+/* Design A heading and description */
+.design-heading {
+    margin-top: 150px; /* Adjust the top margin as needed */
+}
+
+.description-container {
+    position: relative;
+}
+
+.design-description,
+.subscription {
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+    opacity: 1; /* Initial opacity */
+    transition: opacity 0.5s; /* Add transition for opacity */
+}
+
+/* Style for the image container */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images in 1 row */
+    grid-gap: 20px; /* Adjust gap as needed */
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a smooth transition effect for transform and box-shadow */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    box-shadow: 0 0 20px rgba(255, 0, 79, 0.7); /* Add a glowing effect on hover (red color) */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- other head elements... -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project.css">
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- other head elements... -->
+</head>
+<body>
+    <!-- Gradient bar at the top -->
+    <div class="gradient-bar"></div>
+
+    <!-- Logo and Home button aligned -->
+    <div class="top-container">
+        <a href="index.html" class="btn-home" id="homeButton">
+            <i class="fas fa-home fa-lg"></i>
+        </a>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+    </div>
+
+    <!-- Design A content -->
+    <div class="container">
+        <h1 class="design-heading">Graphic Design A</h1>
+        <p class="design-description">Description of Graphic Design A goes here.</p>
+
+        <!-- Subscription on top middle of the page -->
+        <div class="subscription-container">
+            <h2>Subscribe for updates!</h2>
+            <!-- Add your subscription form or content here -->
+        </div>
+
+        <!-- Image placeholders, adjust as needed -->
+        <div class="image-container">
+            <img src="images/me landscape.png" alt="Design A Image 1">
+            <img src="images/me landscape.png" alt="Design A Image 2">
+            <img src="images/me landscape.png" alt="Design A Image 3">
+            <img src="images/me landscape.png" alt="Design A Image 4">
+            <img src="images/me landscape.png" alt="Design A Image 5">
+            <img src="images/me landscape.png" alt="Design A Image 6">
+            <img src="images/me landscape.png" alt="Design A Image 7">
+            <img src="images/me landscape.png" alt="Design A Image 8">
+            <img src="images/me landscape.png" alt="Design A Image 9">
+            <img src="images/me landscape.png" alt="Design A Image 10">
+            <!-- Add more image placeholders as needed -->
+        </div>
+    </div>
+
+    <!-- Inside your Design A page HTML -->
+    <script>
+        // JavaScript to toggle the class based on scroll position
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Get the Home button element
+            var homeButton = document.querySelector('.btn-home'); // Use the correct class name
+
+            // Add or remove the 'show' class based on scroll position
+            if (scrollPosition > 200) {
+                homeButton.classList.add('show');
+            } else {
+                homeButton.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

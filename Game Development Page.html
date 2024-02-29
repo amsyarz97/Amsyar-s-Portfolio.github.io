@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amsyar's Game Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Game Development Style.css">
+    <script src="https://kit.fontawesome.com/c11a3a6cb9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Your content for the about section goes here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <!-- Your content for the services section goes here -->
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <!-- Your content for the portfolio section goes here -->
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <!-- Your content for the contact section goes here -->
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <style>
+        /* Added styles for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            max-height: 80%;
+            cursor: pointer;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+    </style>
+</body>
+<!-- Illustration content -->
+<div class="container" id="home">
+    <h1 class="design-heading">Game Development</h1>
+    <p class="design-description">Create interactive and engaging games.</p>
+
+<!-- New Title for 2D Style -->
+<h2 class="design-subheading">Game Screenshot</h2>
+<!-- Image placeholders for 2D Style, adjust as needed -->
+<div class="image-container">
+    <img src="images/Game Development/1.jpeg" alt="2D Style Image 1" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/2.jpeg" alt="2D Style Image 2" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/3.jpeg" alt="2D Style Image 3" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/4.jpeg" alt="2D Style Image 4" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/5.jpeg" alt="2D Style Image 5" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/6.jpeg" alt="2D Style Image 6" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/7.jpeg" alt="2D Style Image 7" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/8.jpeg" alt="2D Style Image 8" onclick="openModal('images/placeholder.png')">
+</div>
+<!-- New Title for Carricature Style -->
+<h2 class="design-subheading">Game Sprite/Plan</h2>
+<!-- Image placeholders for 2D Style, adjust as needed -->
+<div class="image-container">
+    <img src="images/Game Development/Game Sprite Plan/1.png" alt="Caricature Image 1" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/Game Sprite Plan/2.png" alt="Caricature Image 2" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/Game Sprite Plan/3.png" alt="Caricature Image 3" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/Game Sprite Plan/4.jpg" alt="Caricature Image 4" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/Game Sprite Plan/5.jpg" alt="Caricature Image 5" onclick="openModal('images/placeholder.png')">
+    <img src="images/Game Development/Game Sprite Plan/6.png" alt="Caricature Image 6" onclick="openModal('images/placeholder.png')">
+<!-- Add this HTML code to your existing structure -->
+<div id="video-section">
+    <div class="container">
+        <h2 class="design-subheading">Video</h2>
+        <div class="video-container">
+            <video controls width="100%" height="auto">
+                <source src="images/Game Development/Video/1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls width="100%" height="auto">
+                <source src="images/Game Development/Video/2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls width="100%" height="auto">
+                <source src="images/Game Development/Video/3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls width="100%" height="auto">
+                <source src="images/Game Development/Video/4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add more videos as needed -->
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+    <div class="vertical-navbar">
+        <a href="Graphic Design Page.html"><i class="fa-solid fa-layer-group"></i><span>Graphic Design</span></a>
+        <a href="Illustration Page.html"><i class="fa-solid fa-palette"></i><span>Illustration</span></a>
+        <a href="3D Art Page.html"><i class="fas fa-cube"></i><span>3D Art</span></a>
+        <a href="Game Development Page.html"><i class="fa-solid fa-gamepad"></i></i><span>Game Development</span></a>
+        <a href="Freelance Page.html"><i class="fas fa-briefcase"></i><span>Freelance</span></a>
+        <a href="Internship Highlight Page.html"><i class="fas fa-lightbulb"></i><span>Internship Highlight</span></a>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Amsyar. Made this without <i class="fa-solid fa-bed"></i> sleep </p>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+    <!-- Scripts -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('imageModal');
+    
+        // Get the image and set it to the modal
+        var modalImg = document.getElementById('fullImage');
+        var images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = 'flex'; // Display the modal as flex (centered)
+                modalImg.src = this.src;
+            };
+        });
+    
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = 'none'; // Hide the modal
+        }
+    
+        // Close the modal when clicking outside of the image
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
+    </script>
+
+</body>
+</html>
+</div>
+</div>
+</html>
+</body>
+</html>
